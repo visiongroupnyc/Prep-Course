@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    return "hola, "+ str;  
+    return str;  
 }
 
 function suma(x, y) {
@@ -72,8 +72,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return srt1.lenght()===str2.lenght();
-  
+  return str1.length===str2.length;
+
 }
 
 function menosQueNoventa(num) {
@@ -164,9 +164,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero > 0){
-    return "es positivo";
+    return "Es positivo";
   }else if(numero < 0){
-    return "es negativo";
+    return "Es negativo";
   }else if (numero===0){
     return false;
   }
@@ -193,7 +193,9 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola, "+nombre;
+  
+
+  return "Hola " + nombre + "!";
   
 }
 
@@ -236,6 +238,26 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+  if (letra.length===1){
+    if(letra=="a"){
+      return "Es vocal";
+    }else if(letra=="e"){
+      return "Es vocal";
+
+    }else if(letra=="i"){
+      return "Es vocal";
+
+    }else if(letra=="o"){
+      return "Es vocal";
+
+    }else if(letra=="u"){
+      return "Es vocal";
+
+    }
+    return "Dato incorrecto";
+  }if(letra.length>1){
+      return "Dato incorrecto";
+    }
 
   
 }
